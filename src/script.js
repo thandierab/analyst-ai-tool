@@ -19,7 +19,7 @@ function generateTips(event) {
 
   let tipsElement = document.querySelector("#tips");
   tipsElement.classList.remove("hidden");
-  tipsElement.innerHTML = `<div class="blink">⌛Generating tips for your query</div>`;
+  tipsElement.innerHTML = `<div class="blink">⌛Generating response for your query</div>`;
 
   axios.get(apiUrl).then(displayTips);
 }
